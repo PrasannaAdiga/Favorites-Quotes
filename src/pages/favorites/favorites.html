@@ -8,5 +8,10 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>This is favorites page</h3>
+  <ion-list>
+    <ion-item *ngFor="let quote of favoriteQuotes">
+      <h3>{{quote.person}}</h3>
+      <p>{{quote.text}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>
