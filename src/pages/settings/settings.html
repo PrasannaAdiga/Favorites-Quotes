@@ -8,5 +8,15 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>This is settings page</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>Alternative Background</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-toggle (ionChange) = "onToggle($event)" [checked] = "checkAltBackground()">
+        </ion-toggle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
