@@ -11,7 +11,7 @@ import { QuotesService } from '../../services/quotes';
 })
 export class QuotesPage implements OnInit {
   quoteGroup: {category: string, quotes:Quote[], icon: string}[];
-  constructor(private navCtrl: NavController, 
+  constructor(
     private navParams: NavParams, 
     private alertCtrl: AlertController,
     private quotesService: QuotesService)  {
